@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Voyages — Zeitreisebüro</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class=" header">
+       <div class="container">
+         <div class="logo">
+            <img src="./images/logo.png" alt="" width="70" height="50">
+           <div class="logo-text">
+             <p class="logo-text">Chrono </p>
+              <p class="logo-text"> Voyages</p>
+           </div>
+        </div>
+       
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#hero">Startseite</a></li>
+                <li><a href="#services">Reiseziele</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+       </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <img src="./images/hero.jpeg" alt="Nebelige Berge als Portal in die Vergangenheit" class="hero-img">
+            <div class="hero-overlay">
+                <h1>Wählen Sie Ihre Epoche</h1>
+                <p>Eine Umdrehung des Sanduhr-Anhängers — und Sie sind in einem anderen Jahrhundert</p>
+                <a href="#booking" class="btn-primary">Reise buchen</a>
+            </div>
+        </section>
+
+          <section class="services" id="services">
+            <h2>Unsere Reiseziele</h2>
+            <div class="container services-container">
+ 
+                <article class="service-card">
+                    
+                    <img src="./images/antike.jpeg" alt="Griechische Säulen der Antike">
+                    <h3>Antike</h3>
+                    <p>Tempel, Philosophen und die Wiege der westlichen Zivilisation. Erleben Sie Griechenland und Rom hautnah.</p>
+                </article>
+ 
+                <article class="service-card">
+                    <img src="./images/mittelalter.jpeg" alt="Mittelalterliche Burg">
+                    <h3>Mittelalter</h3>
+                    <p>Ritter, Burgen und Festmahle bei Kerzenschein. Eine Reise in die Zeit der Turniere und Legenden.</p>
+                </article>
+ 
+                <article class="service-card">
+                    <img src="./images/renaissance.jpeg" alt="Renaissance-Kathedrale">
+                    <h3>Renaissance</h3>
+                    <p>Kunst, Wissenschaft und Wiedergeburt. Begegnen Sie den großen Meistern einer neuen Ära.</p>
+                </article>
+ 
+                <article class="service-card">
+                    <img src="./images/wikingerzeit.jpeg" alt="Wikingerschiff auf dem Fjord">
+                    <h3>Wikingerzeit</h3>
+                    <p>Langschiffe, Fjorde und mutige Seefahrer. Entdecken Sie den Norden vor tausend Jahren.</p>
+                </article>
+ 
+                <article class="service-card">
+                    <img src="./images/industrielle.jpeg" alt="Industrielle Revolution mit Zahnrädern">
+                    <h3>Industrielle Revolution</h3>
+                    <p>Dampfmaschinen, Fabriken und der Beginn des modernen Zeitalters. Steampunk-Atmosphäre inklusive.</p>
+                </article>
+ 
+                <article class="service-card">
+                    <img src="./images/zukunft.jpeg" alt="Zukunftsstadt bei Nacht">
+                    <h3>Ferne Zukunft</h3>
+                    <p>Fliegende Autos, künstliche Intelligenz und Städte, die es noch nicht gibt.</p>
+                </article>
+ 
+            </div>
+        </section>
+
+        <section class="container gallery" id="gallery">
+            <h2>Reisegalerie</h2>
+            <div class=" gallery-grid">
+                <img class="item-1" src="https://loremflickr.com/400/400/clock?lock=1" alt="Aufnahme einer Zeitreise 1">
+                <img class="item-2" src="https://loremflickr.com/400/400/steampunk?lock=2" alt="Aufnahme einer Zeitreise 2">
+                <img class="item-3" src="https://loremflickr.com/400/400/ruins?lock=3" alt="Aufnahme einer Zeitreise 3">
+                <img class="item-4" src="https://loremflickr.com/400/400/desert?lock=4" alt="Aufnahme einer Zeitreise 4">
+                <img class="item-5" src="https://loremflickr.com/400/400/forest,mist?lock=5" alt="Aufnahme einer Zeitreise 5">
+                <img class="item-6" src="https://loremflickr.com/400/400/space?lock=6" alt="Aufnahme einer Zeitreise 6">
+                <img class="item-7" src="https://loremflickr.com/400/400/vintage,map?lock=7" alt="Aufnahme einer Zeitreise 7">
+                <img class="item-8" src="https://loremflickr.com/400/400/temple,ancient?lock=8" alt="Aufnahme einer Zeitreise 8">
+            </div>
+        </section>
+
+        <section class="booking" id="booking">
+            <h2>Reise buchen</h2>
+            <div class="container booking-container">
+ 
+                <form class="booking-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+ 
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="name@beispiel.de" required>
+ 
+                    <label for="era">Gewünschte Epoche</label>
+                    <select id="era" name="era" required>
+                        <option value="" disabled selected>Bitte wählen</option>
+                        <option value="antike">Antike</option>
+                        <option value="mittelalter">Mittelalter</option>
+                        <option value="renaissance">Renaissance</option>
+                        <option value="wikinger">Wikingerzeit</option>
+                        <option value="industrie">Industrielle Revolution</option>
+                        <option value="zukunft">Ferne Zukunft</option>
+                    </select>
+ 
+                    <label for="date">Wunschdatum</label>
+                    <input type="date" id="date" name="date">
+ 
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Erzählen Sie uns von Ihren Wünschen..."></textarea>
+ 
+                    <button type="submit" class="btn-primary">Anfrage senden</button>
+                </form>
+ 
+                <div class="contact-info">
+                    <h3>Kontaktdaten</h3>
+                    <p><strong>Adresse:</strong><br>Zeitreisestraße 17<br>60313 Frankfurt am Main</p>
+                    <p><strong>Telefon:</strong><br>+49 69 1234 5678</p>
+                    <p><strong>E-Mail:</strong><br>info@chronovoyages.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>Montag – Freitag: 9:00 – 18:00<br>Samstag: 10:00 – 14:00</p>
+                </div>
+ 
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container footer" id="contact">
+        <p>&copy; 2026 Chrono Voyages. Alle Zeitlinien vorbehalten.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">E-Mail</a>
+        </div>
+    </footer>
+
+</body>
+</html>
